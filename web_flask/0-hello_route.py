@@ -8,8 +8,11 @@ app = Flask (_name_)
 
 #Define the route for the root URL '/'
 @app.route('/airbnb-onepage/', strict_slashes=False)
-def hello hbnb ():
-""" Displays 'Hello HBNB! """
+
+def hello hbnb():
+"""
+Displays 'Hello HBNB!'
+"""
 return "Hello HBNB!"
 
 if _name_ === "_main_":
