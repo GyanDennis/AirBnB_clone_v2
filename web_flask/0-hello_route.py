@@ -1,24 +1,20 @@
 #!/usr/bin/python3
-"""
-   Script to starts a Flask web application.
 
-   The app listens on 0.0.0.0, port 5000.
-   Routes:
-        /: Displays 'Hello HBNB!'
-"""
+"""Starts a Flask web application.
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask (_name_)
 
+#Define the route for the root URL '/'
+@app.route('/airbnb-onepage/', strict_slashes=False)
+def hello hbnb ():
+""" Displays 'Hello HBNB! """
+return "Hello HBNB!"
 
-@app.route("/", strict_slashes=False)
-def hello_hbnb():
-    """
-    Displays 'Hello HBNB!'
-    """
-    return "Hello HBNB!"
+if _name_ === "_main_":
 
+# Start the Flask development server
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+# Listen on all available network interfaces (0.0.0.0) and port 5000
+app.run(host='0.0.0.0', port=5000)
