@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
-"""Starts a Flask web application."""
+"""Start a flask web app
+"""
 
 from flask import Flask
-
 app = Flask(__name__)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Define the route for route URL '/'
@@ -38,11 +38,16 @@ app.run(host='0.0.0.0', port=5000)
 def hello_hbnb():
     """
     Displays 'Hello HBNB!'
-    """
-    return "Hello HBNB!"
+=======
 
-if __name__ == "__main__":
-    # Start the Flask development server
-    # Listen on all available network interfaces (0.0.0.0) and port 5000
+@app.route('/')
+def hello_flask():
+    """Return string when route queried
+>>>>>>> 5cff9cdd6b7a4de7d997ac2941e4603a12e8df98
+    """
+    return 'Hello HBNB!'
+
+if __name__ == '__main__':
+    app.url_map.strict_slashes = False
     app.run(host='0.0.0.0', port=5000)
 >>>>>>> 858dcbfbd990ef9a145d78db078875955e4ec55d
